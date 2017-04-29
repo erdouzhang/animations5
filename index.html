@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+      @-webkit-keyframes mycolor {
+        0% {
+            width: 100px;
+            height: 100px;
+        }
+
+        100% {
+            width: 500px;
+            height: 500px;
+        }
+      }
+      div {
+        background-color: red;
+        width: 500px;/*如果不加这个宽和高，那么动画结束，页面是空白*/
+        height: 500px;/*如果不加这个宽和高，那么动画结束，页面是空白*/
+        -webkit-animation-name: mycolor;
+        -webkit-animation-duration: 5s;
+        -webkit-animation-timing-function: ease-out;
+      }
+  </style>
+</head>
+<body>
+  <div></div>
+</body>
+</html>
